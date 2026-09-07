@@ -1,0 +1,56 @@
+:root {
+    --cput-blue: #005EB8;
+    --cput-dark-blue: #004B93;
+    --light-gray: #f8f9fa;
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.bg-cput {
+    background-color: var(--cput-blue) !important;
+    color: white !important;
+}
+
+.text-cput {
+    color: var(--cput-blue) !important;
+}
+
+.btn-cput {
+    background-color: var(--cput-blue);
+    color: white;
+    border: none;
+}
+
+.btn-cput:hover {
+    background-color: var(--cput-dark-blue);
+    color: white;
+}
+
+/* Centering Layout Wrapper */
+.dashboard-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto; /* Centers horizontally and adds vertical space */
+    flex-grow: 1;
+}
+
+.card {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: none;
+    border-top: 4px solid var(--cput-blue);
+    margin-bottom: 20px;
+}
